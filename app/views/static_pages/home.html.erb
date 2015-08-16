@@ -1,1 +1,17 @@
 <div id="map"></div>
+
+<div id="locations_form" class="container">
+  <div class="row">
+    <%= bootstrap_form_tag do |f| %>
+      <div class="col-xs-6">
+        <%= f.text_field :location_one, hide_label: true, placeholder: 'Location one' %>
+      </div>
+      <div class="col-xs-6">
+        <%= f.text_field :location_two, hide_label: true, placeholder: 'Location two' %>
+      </div>
+      <div class="col-xs-12">
+        <%= f.submit "Compare Elevations", class: "btn btn-primary btn-block" %>
+      </div>
+    <% end %>
+  </div>
+</div>

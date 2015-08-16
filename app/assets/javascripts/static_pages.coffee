@@ -4,3 +4,7 @@ $ ->
     zoom: 8
     mapTypeId: google.maps.MapTypeId.TERRAIN
   map = new google.maps.Map $('#map')[0], mapOptions
+
+  $('#locations_form').submit (event) ->
+    $('#location_one').val "yes!"
+    event.preventDefault()

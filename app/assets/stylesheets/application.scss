@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "rails_bootstrap_forms";
 
 html, body { 
   height: 100%;
@@ -8,3 +9,17 @@ html, body {
 }
 
 #map { height: 100%; }
+
+#locations_form {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #222;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
